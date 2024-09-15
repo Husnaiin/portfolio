@@ -2,9 +2,9 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-  }
-  
-  video {
+}
+
+video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -15,9 +15,9 @@ body, html {
     z-index: -1;
     transform: translate(-50%, -50%);
     background-size: cover;
-  }
-  
-  nav {
+}
+
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,109 +26,165 @@ body, html {
     color: white;
     padding: 10px;
     text-align: center;
-    z-index: 1; /* Ensures navbar is above other content */
-  }
-  #contact{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    z-index: 1; 
-  }
-  
-  nav .nav-list {
+    z-index: 1;
+}
+
+
+nav .nav-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav .nav-list li {
+}
+
+nav .nav-list li {
     display: inline;
     margin: 0 15px;
-  }
-  
-  nav .nav-list a {
+}
+
+nav .nav-list a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-  }
-  
-  .content {
-    padding-top: 60px; /* Adjust to account for fixed navbar height */
+}
+
+.content {
+    padding-top: 60px;
     color: #f9f9f9;
     text-align: left;
     font-size: 1.5rem;
     border-left: 5rem;
-    border-right: 5rem;  }
+    border-right: 5rem;
+}
 
-    .video-container{
-        display: flex;
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-    .video-container iframe{
-        border-radius: 20px; 
-  
-    }
-   
-  #dp {
-    /* flex:auto; */
-    width: 10rem;
-    height: 10rem;
-    background-image: url("dp.jpg");
-    background-size: cover;
-    background-position: center;
-    /* position: fixed; Changed from absolute to fixed */
-    border-radius: 50%;
-    
-    /* align-items:center; */
-    /* right: 20px; Adjust right alignment */
-    /* top: 20px; Adjust top alignment */
-  }
-  
-  section {
+.video-container {
+    display: flex;
+    padding-right: 5rem;
+}
+
+.video-container iframe {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* border-radius: 10px; */
+}
+
+section {
     margin-bottom: 40px;
-  }
-  
-  h1 {
+}
+
+h1 {
     margin-bottom: 20px;
     font-size: 4rem;
-    /* margin-left: 2rem; */
     text-align: center;
-  }
-  h2 {
-    margin-bottom: 20px;
-    font-size: 3rem;
-    margin-left: 2rem;
-  }
-  h3 {
+    /* color: #003e80; */
+    color:black
+}
+
+h2 {
     margin-bottom: 20px;
     font-size: 2rem;
     margin-left: 2rem;
-  }
-  a {
+    /* color: black; */
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+a {
     color: #f9f9f9;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-  }
-  .container {
+}
+
+/* .container {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
-    /* border-right: 5rem; */
-  }
-  #intro {
-    flex: 1; /* Takes up 50% of the container */
-    padding: 20px;
+    } */
+    
+     /* #intro {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+    } */
+    
+    
+    .poetry {
+        text-align: center;
+    }
+    
+    /* Card Styles */
+    .education-cards, .skills-cards, .projects-cards, .certifications-cards ,.container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        color:rgb(222, 228, 235); 
+    }
+    
+    .education-card:hover, .skills-card:hover, .project-card:hover, .certification-card:hover {
+        cursor:pointer;
+    border: #161414;
+    border-width: 2px;
+    border-style: groove;
+}
+.education-card, .skills-card, .project-card, .certification-card ,#intro,#dp{
+    background-color: rgba(49, 71, 72, 0.55);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* padding: 20px; */
+    width: 300px;
     box-sizing: border-box;
-   
-  }
+    
+}
+#intro{
+    background-color: rgba(49, 71, 72, 0);
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    color: #161414;
+    font-size:2rem;
+}
+#dp {
+    width: 20rem;
+    height: 20rem;
+    background-image: url("dp2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+} 
 
-  .poetry{
-    text-align: center;
-  }
+.education-card h3, .skills-card h3, .project-card h3, .certification-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* .education-card p, .skills-card ul, .project-card p, .certification-card p { */
+/* margin: 5px 0; */
+/* } */
+
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.poetry{
+    font-size: 4rem;
+    color: black;
+}
+
+    #contact {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        z-index: 1;
+    }
