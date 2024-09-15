@@ -188,3 +188,6 @@ p{
         text-align: center;
         z-index: 1;
     }
+    #theme-toggle-btn:hover{
+        cursor: pointer;
+    }
