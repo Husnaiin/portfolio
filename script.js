@@ -47,3 +47,71 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => populateWebsite(data));
+  });
+  
+  function populateWebsite(data) {
+    // Populate About Section
+    document.getElementById('intro').innerHTML = `<p>${data.about.intro}</p>`;
+  
+    // Populate Education Section
+    const educationSection = document.querySelector('.education-cards');
+    educationSection.innerHTML = '';
+    data.education.forEach(item => {
+      const card = `
+        <div class="education-card">
+          <h3>${item.school}</h3>
+          <p>${item.location || ''}</p>
+          <p>${item.degree}</p>
+          <p>${item.duration}</p>
+        </div>
+      `;
+      educationSection.innerHTML += card;
+    });
+  
+    // Populate Skills Section
+    const softSkills = document.querySelector('.skills-card:nth-of-type(1) ul');
+    const hardSkills = document.querySelector('.skills-card:nth-of-type(2) ul');
+    softSkills.innerHTML = '';
+    hardSkills.innerHTML = '';
+  
+    data.skills.softSkills.forEach(skill => {
+      softSkills.innerHTML += `<li>${skill}</li>`;
+    });
+    data.skills.hardSkills.forEach(skill => {
+      hardSkills.innerHTML += `<li>${skill}</li>`;
+    });
+  
+    // Populate Projects Section
+    const projectsSection = document.querySelector('.projects-cards');
+    projectsSection.innerHTML = '';
+    data.projects.forEach(project => {
+      const card = `
+        <div class="project-card">
+          <h3>${project.title}</h3>
+          <p><em>${project.date}</em></p>
+          <p>${project.description}</p>
+        </div>
+      `;
+      projectsSection.innerHTML += card;
+    });
+  
+    // Populate Certifications Section
+    const certificationsSection = document.querySelector('.certifications-cards');
+    certificationsSection.innerHTML = '';
+    data.certifications.forEach(certification => {
+      const card = `
+        <div class="certification-card">
+          <h3>${certification.title}</h3>
+          <p><em>${certification.date}</em></p>
+        </div>
+      `;
+      certificationsSection.innerHTML += card;
+    });
+  }
+  

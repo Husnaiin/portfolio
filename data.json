@@ -1,0 +1,77 @@
+{
+    "about": {
+      "intro": "Welcome to my professional profile. I am a developer with experience in various fields."
+    },
+    "education": [
+      {
+        "school": "Information Technology University",
+        "location": "Lahore, Pakistan",
+        "degree": "Bachelor of Science in Computer Sciences",
+        "duration": "Aug. 2022 – Aug. 2026"
+      },
+      {
+        "school": "Superior Group Of Colleges",
+        "degree": "FSC Pre Engineering",
+        "duration": "July 2019 - Aug 2021"
+      },
+      {
+        "school": "The Trust School",
+        "degree": "Matric with Computer Science and Maths",
+        "duration": "2007 - March 2019"
+      }
+    ],
+    "skills": {
+      "softSkills": [
+        "Communication",
+        "Teamwork",
+        "Problem-solving",
+        "Leadership",
+        "Adaptability",
+        "Time Management",
+        "Creativity",
+        "Conflict Resolution",
+        "Critical Thinking"
+      ],
+      "hardSkills": [
+        "Python",
+        "C/C++",
+        "JavaScript, MERN Stack",
+        "HTML5, CSS3",
+        "Data Structures & Algorithms",
+        "Database Management (MongoDB, SQL)",
+        "Object-Oriented Programming (OOP)",
+        "Django",
+        "Webflow",
+        "Git, GitHub",
+        "Libraries: pandas, NumPy, tkinter, Matplotlib, SFML"
+      ]
+    },
+    "projects": [
+      {
+        "title": "Gomoku (15x15 Tic-Tac-Toe)",
+        "date": "November 2022",
+        "description": "Both in C++ and Python. Manually implemented AI for efficient gameplay in man vs. computer mode."
+      },
+      {
+        "title": "Shogi (Japanese Chess)",
+        "date": "April 2023",
+        "description": "Created in C++ using SFML to enhance understanding of Object-Oriented Programming (OOP) concepts."
+      },
+      {
+        "title": "Paint App",
+        "date": "April 2023",
+        "description": "Built in Python using Tkinter to implement OOP principles for a functional paint application."
+      }
+    ],
+    "certifications": [
+      {
+        "title": "Certification in HTML, CSS",
+        "date": "June 2024"
+      },
+      {
+        "title": "Training on Project Management",
+        "date": "February 2024"
+      }
+    ]
+  }
+  
